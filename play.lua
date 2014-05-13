@@ -98,7 +98,7 @@ end
 
 gameStarted = true
 
-main_scene:Remove(layers["ui"])
+main_scene:Remove(layers["mainUi"])
 main_scene:Remove(layers["terrain"])
 
 for _,body in ipairs(layers["terrain"].bodies) do
