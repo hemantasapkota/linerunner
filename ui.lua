@@ -5,7 +5,7 @@ function makeTweenButton(font, str, tx, ty, onClick)
   local rect = lt.Rect(txt.left, txt.top, txt.right, txt.bottom):Tint(1, 1, 1, 0)
 
   lyr:Insert(rect)
-  lyr:Insert(txt:Tint(0.0,1,1))
+  lyr:Insert(txt:Tint(1,0,1))
 
   rect:PointerDown(onClick, rect.x1, rect.y2, rect.x2, rect.y1)
 
