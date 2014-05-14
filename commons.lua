@@ -1,4 +1,5 @@
 images = lt.LoadImages({
+  "bg",
   "bg1",
   "bg2",
   "bg3",
