@@ -82,8 +82,6 @@ function start()
     main_scene:Remove(layers["ground"])
     main_scene:Remove(layers["terrain"])
     main_scene:Remove(layers["controls"])
-    main_scene:Remove(layers["mainUi"])
-    main_scene:Remove(layers["optionsUi"])
     unmakeSound("title")
   end
   --End clear
@@ -99,7 +97,6 @@ function start()
   layers["terrain"] = makeTerrain()
   layers["controls"] = makeAndroidControls()
   layers["mainUi"] = makeGameUI()
-  layers["optionsUi"] = makeOptionsUI()
 
   main_scene:Insert(layers["bg"])
   main_scene:Insert(layers["ground"])
