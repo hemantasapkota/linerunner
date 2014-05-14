@@ -24,23 +24,8 @@ function makeBG()
   local bg = lt.Layer():BlendMode("add"):Tint(1, 1, 1, 1)
 
   bg.child = lt.Layer()
-  bg.child:Insert(images.bg1:Scale(0.3):Translate(0, 1))
+  bg.child:Insert(images.bg:Scale(0.3):Translate(0, 1))
   bgLayer:Insert(bg)
-
-  local bg2 = lt.Layer():BlendMode("subtract"):Tint(0.5, 0.5, 0.5, 1)
-  bg2.child = lt.Layer():Wrap()
-  bg2.child:Insert(images.bg3:Scale(0.25):Translate(-1, 1))
-  bg2.child:Insert(images.bg2:Scale(0.25):Translate(0.5, 0.9))
-
-  bgLayer:Insert(bg2)
-
-  -- local tx1, tx2 = 0, 0
-  -- bgLayer:Action(function(dt, node)
-  --   bgLayer:Remove(bg2)
-  --   bg2 = bg2:Translate(tx1, 0)
-  --   bgLayer:Insert(bg2)
-  --   tx1 = tx1 + 0.001 * dt
-  -- end)
 
   return bgLayer
 end
