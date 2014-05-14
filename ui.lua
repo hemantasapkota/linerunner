@@ -17,6 +17,7 @@ function makeGameUI()
 
   local optionsBtn = makeTweenButton(font, "Options", 0, 4, function(node)
     main_scene:Remove(layers["mainUi"])
+    layers["optionsUi"] = makeOptionsUI()
     main_scene:Insert(layers["optionsUi"])
   end)
 
@@ -38,6 +39,9 @@ function makeOptionsUI()
 
   local backBtn = makeTweenButton(font, "Back", 0, 2, function(node)
     main_scene:Remove(layers["optionsUi"])
+    main_scene:Remove(layers["mainUi"])
+
+    layers["mainUi"] = makeGameUI()
     main_scene:Insert(layers["mainUi"])
   end)
 
