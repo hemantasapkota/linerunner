@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:ButtonBar" id="1" x="16" y="16" text="One, Two, Three" measuredWidth="148" measuredHeight="27" selection="0">
+    <font/>
+    <items x="0" y="0" width="46" height="27" text="One"/>
+    <items x="46" y="0" width="46" height="27" text="Two"/>
+    <items x="92" y="0" width="56" height="27" text="Three"/>
+  </widgets>
+  <widgets xsi:type="model:Panel" id="2" x="120" y="104" width="425" height="89" measuredWidth="425" measuredHeight="89"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
