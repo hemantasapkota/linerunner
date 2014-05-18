@@ -33,11 +33,17 @@ end
 
 function makeOptionsUI()
   local optsLayer = lt.Layer()
-  local soundVal = {on = true, changed = true}
 
-  local soundToggleBtn = makeTweenButton(font, "Sound", 0, 4, function(node)
+  --Sound
+  local soundText = makeTweenButton(font, "Sound", 0, 4, function(node)
   end)
 
+  local soundVal = makeTweenButton(font, "ON", 4, 4, function(node)
+  end)
+  soundVal.left = soundVal.enter
+  soundVal.right = soundVal.enter
+
+  --Back
   local backBtn = makeTweenButton(font, "Back", 0, 2, function(node)
     main_scene:Remove(layers["optionsUi"])
     main_scene:Remove(layers["mainUi"])
@@ -46,7 +52,8 @@ function makeOptionsUI()
     main_scene:Insert(layers["mainUi"])
   end)
 
-  optsLayer:Insert(soundToggleBtn:Scale(0.6))
+  optsLayer:Insert(soundText:Scale(0.6))
+  optsLayer:Insert(soundVal:Scale(0.6))
   optsLayer:Insert(backBtn:Scale(0.6))
 
   return optsLayer
