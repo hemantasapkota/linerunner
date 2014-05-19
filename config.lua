@@ -11,3 +11,4 @@ lt.config.world_right = 7.5
 --FlatUI colors
 silver = {0.741176, 0.764706, 0.780392}
 amethyst = {0.607843, 0.349020, 0.713726}
+peterriver = {0.203922, 0.596078, 0.858824}
