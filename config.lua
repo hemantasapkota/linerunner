@@ -7,3 +7,6 @@ lt.config.world_bottom = -5
 lt.config.world_top = 5
 lt.config.world_left = -7.5
 lt.config.world_right = 7.5
+
+--FlatUI colors
+silver = {0.741176, 0.764706, 0.780392}
