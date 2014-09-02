@@ -3,8 +3,8 @@ Line Runner
 
 Line Runner game made with the @lotech framework
 
-[!Blue1]()
-[!Blue2]()
+![Blue1](https://raw.githubusercontent.com/hemantasapkota/linerunner/master/screenshots/blue1.png)
+![Blue2](https://raw.githubusercontent.com/hemantasapkota/linerunner/master/screenshots/blue2.png)
 
 Building
 ========
